@@ -1,0 +1,32 @@
+<template name="googleMap">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h5>Search Venues</h5></div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group">
+                <span class="input-group-addon">Enter city: </span>
+                <input id="input-city" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <input id="input-search" type="text" class="form-control">
+                <div class="input-group-btn">
+                  <button id="btn-search" class="btn btn-default">Search Venue</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="map-canvas"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

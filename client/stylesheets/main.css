@@ -1,0 +1,36 @@
+/* CSS declarations go here */
+
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
+
+#search {
+  height: 40px;
+}
+
+#map-canvas {
+  position: relative;
+  height: 200px;
+}
+
+#search-result {
+  height: 200px;
+}
+
+#search-result img {
+  width: 20px;
+}
+
+#saved-result {
+  height: 200px;
+}
+
+#saved-result img {
+  width: 20px;
+}
+
+.jumbotron {
+  padding: 20px;
+}

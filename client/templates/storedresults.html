@@ -1,0 +1,51 @@
+<template name="storedResults">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h5>Saved Venues</h5></div>
+        <div class="panel-body">
+          <table id="saved-result" class="table table-hover table-condensed">
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>City</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each storedResults}}
+                <tr>
+                  <td><input class="chk-save" type="checkbox" data="{{pid}}"></td>
+                  <td><img src="{{img}}"></td>
+                  <td>{{name}}</td>
+                  <td>{{address}}</td>
+                  <td>{{city}}</td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+        <div class="panel-footer">
+          <div class="row">
+            <div class="col-md-3">
+              <button id="remove" class="btn btn-block btn-danger">Remove selected</button>
+            </div>
+            <div class="col-md-3">
+              <div class="input-group">
+                <span class="input-group-addon">CSV:</span>
+                <div class="input-group-btn">
+                  <button id="exports" class="btn btn-block btn-default">Export selected</button>
+                </div>
+                <div class="input-group-btn">
+                  <button id="exporta" class="btn btn-block btn-default">Export all</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

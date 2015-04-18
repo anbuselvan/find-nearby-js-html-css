@@ -1,0 +1,11 @@
+<template name="home">
+  {{> nav}}
+  {{#if currentUser}}
+    {{> googleMap}}
+    {{> searchResults}}
+    {{> storedResults}}
+    {{> modal_select}}
+  {{else}}
+    {{> welcome}}
+  {{/if}}
+</template>
